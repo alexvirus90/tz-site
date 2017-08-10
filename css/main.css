@@ -24,6 +24,226 @@ body textarea:required:valid {
 	border: green 3px solid
 }
 body {
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "ArialRegular", sans-serif;
 	font-size: 16px;
+}
+
+.top_header {
+	background-color: #4488bb;
+}
+
+.header-image {
+	background-image: url(../images/bg_header_1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.banner-text {
+	padding: 0;
+}
+
+.banner-text p:nth-child(1) {
+	color: #fff;
+	font-family: ArialBold;
+	font-size: 48px;
+	margin: 13px 0 26px 0;
+	padding-bottom: 13px;
+	border-bottom: 5px solid #fff;
+	width: 337px;
+}
+
+.banner-text p:nth-child(2) {
+	color: #fff;
+	font-size: 18px;
+	width: 503px;
+}
+
+.request-form {
+	background-color: #fff;
+	margin: 30px 75px 30px 0;
+	height: 340px;
+	padding: 18px 20px;
+	width: 300px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+	float: right;
+}
+
+.text-form {
+	color: #4488bb;
+	font-size: 24px;
+	font-family: "ArialBold";
+	margin-bottom: 10px;
+}
+
+.form {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	position: relative;
+}
+
+.form, .country-form {
+	margin-bottom: 15px;
+}
+
+.text-label {
+	font-size: 10px;
+	color: #aaaaaa;
+	font-family: "ArialRegular";
+	padding: 0 10px;
+	margin: 2px 0 0 0 ;
+	position: absolute;
+}
+
+.text-input-email, .text-input-name {
+	width: 255px;
+	border: 0;
+	margin: 14px 0 14px 2px;
+	padding: 0 0 0 10px;
+}
+
+.form input:focus {
+	outline: none;
+}
+
+.form {
+	border: 1px solid #000;
+	min-height: 30px;
+}
+
+.btn-form-email, .btn-form-name {
+	position: absolute;
+	right: 13px;
+	top: 0;
+	bottom: 0;
+	height: 12px;
+	margin: auto;
+	font-size: 12px;
+	cursor: pointer;
+	color: #7a7a7e;
+}
+
+.country-form-select {
+	border: 0;
+	background-color: #eeeeee;
+	min-height: 50px;
+	padding: 0 0 0 8px;
+}
+
+.country-form select {
+	color: #aaaaaa;
+}
+
+.country-form select option {
+	color: #aaaaaa;
+}
+
+.country-form select:focus {
+	box-shadow: none;
+}
+
+.form-agree span {
+	color: #aaaaaa;
+}
+
+.button-form button{
+	width: 120px;
+	background: #4488bb;
+	background-image: -webkit-linear-gradient(top, #4488bb, #2e5d80);
+	background-image: -moz-linear-gradient(top, #4488bb, #2e5d80);
+	background-image: -ms-linear-gradient(top, #4488bb, #2e5d80);
+	background-image: -o-linear-gradient(top, #4488bb, #2e5d80);
+	background-image: linear-gradient(to bottom, #4488bb, #2e5d80);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 0;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 7px 20px;
+	text-decoration: none;
+}
+
+.button-form a {
+	color: #aaaaaa;
+	margin-left: 16px;
+}
+
+section .card-1,
+section .card-2,
+section .card-3,
+section .card-4,
+section .card-5 {
+
+	background-repeat: no-repeat;
+	height: 150px;
+	padding: 0;
+}
+
+section .card-1,
+section .card-2,
+section .card-3 {
+	width: 370px;
+}
+
+section .card-4,
+section .card-5 {
+	width: 562px;
+}
+
+section .card-1 {
+	background-image: url('../images/card_1.png');
+	background-position: center center;
+	margin: 75px 7px 24px 0;
+}
+section .card-2 {
+	background-image: url('../images/card_2.png');
+	background-position: center 42%;
+	margin: 75px 8px 24px 8px;
+}
+section .card-3 {
+	background-image: url('../images/card_3.png');
+	background-position: center 65%;
+	margin: 75px 0 24px 7px;
+}
+section .card-4 {
+	background-image: url('../images/card_4.png');
+	background-position: center 29%;
+	margin: 0 7px 0 0;
+}
+section .card-5 {
+	background-image: url('../images/card_5.png');
+	background-position: center 33%;
+	margin: 0 0 0 8px;
+}
+
+.card-text {
+	background-color: #4488bb;
+	background-color: rgba(68, 136, 187, 0.7);
+	padding: 10px 20px 0 20px;
+	min-height: 150px;
+	color: #fff;
+}
+
+.card-text p:nth-child(1) {
+	font-family: ArialBold;
+	font-size: 22px;
+	margin-bottom: 7px;
+}
+
+.card-text p:nth-child(2) {
+	font-size: 13px;
+	font-family: ArialRegular;
+}
+
+.card-container, .header, .img {
+	padding: 0;
+}
+
+.img img {
+	float: right;
+	margin-top: 10px;
 }
