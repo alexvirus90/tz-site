@@ -8,38 +8,11 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-	.sell_right .button {
-		margin: 15px auto;
-		float: none;
-		max-width: 250px;
-	}
-	
-	.sell_descr {
-		text-align: center;
-	}
+}
 
-	.main_menu ul {
-		background-color: #3797bf;
-		display: none;
-		position: absolute;
-		width: 100%;
-	}
-	.main_menu ul li {
-		display: block;
-		}
-	}
-
-	/* Small Devices, Tablets */
+		/* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.top_links {
-		background-color: #585d61;
-		display: none;
-		margin-top: 15px;
-		padding: 14px;
-		position: absolute;
-		vertical-align: middle;
-		width: 100%;
-	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -67,16 +40,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.top_links {
-		display: inline-block !important;
-	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.main_menu ul {
-	display: block !important;
-	}
+
 }
 
 /* Large Devices, Wide Screens */
