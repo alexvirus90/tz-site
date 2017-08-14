@@ -1,31 +1,16 @@
-*::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*::-moz-placeholder {
-	color: #666;
-	opacity: 1;
-}
-*:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
+* {
+	box-sizing: border-box;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-	border: red 3px solid
-}
-body input:required:valid,
-body textarea:required:valid {
-	border: green 3px solid
-}
 body {
 	font-family: "ArialRegular", sans-serif;
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
 }
 
 .top_header {
@@ -71,6 +56,56 @@ body {
 	float: right;
 }
 
+.form {
+	margin: 13px 0 14px 2px;
+}
+
+.input-holder {
+	position: relative;
+}
+
+.request-form input[type=email],
+.request-form input[type=text]{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border: 1px solid #000000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0 0 0 10px;
+}
+.request-form input[type]:focus {
+	background: #eeeeee;
+}
+
+.title-form label {
+	pointer-events: none;
+	position: absolute;
+	opacity: 0;
+	top: 3px;
+	transform: translateY(15%);
+	z-index: 2;
+	font-weight: bold;
+	font-size: 10px;
+	padding-left: 6px;
+	color: #aaaaaa;
+	transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.content-form {
+	position: relative;
+}
+
+.bt-flabel__float label {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.bt-flabel__float input[type] {
+	padding-top: 9px;
+}
+
 .text-form {
 	color: #4488bb;
 	font-size: 24px;
@@ -78,40 +113,8 @@ body {
 	margin-bottom: 10px;
 }
 
-.form {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	position: relative;
-}
-
-.form, .country-form {
+.country-form {
 	margin-bottom: 15px;
-}
-
-.text-label {
-	font-size: 10px;
-	color: #aaaaaa;
-	font-family: "ArialRegular";
-	padding: 0 10px;
-	margin: 2px 0 0 0 ;
-	position: absolute;
-}
-
-.text-input-email, .text-input-name {
-	width: 255px;
-	border: 0;
-	margin: 14px 0 14px 2px;
-	padding: 0 0 0 10px;
-}
-
-.form input:focus {
-	outline: none;
-}
-
-.form {
-	border: 1px solid #000;
-	min-height: 30px;
 }
 
 .btn-form-email, .btn-form-name {
@@ -124,6 +127,50 @@ body {
 	font-size: 12px;
 	cursor: pointer;
 	color: #7a7a7e;
+}
+
+.text-color-not {
+	color: #bb4444 !important;
+}
+
+.text-color-is {
+	color: #4488bb !important;
+}
+
+.message {
+	position: absolute;
+	z-index: 9;
+	display: none;
+	width: 70%;
+	padding: 10px;
+	margin: 10px 0 0 38px;
+	background: #bb4444;
+	color: #fff;
+	text-align: center;
+}
+
+.message:after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	display: block;
+	margin-left: -10px;
+	border: solid;
+	border-color: #bb4444 transparent #bb4444;
+	border-width: 0 10px 10px;
+}
+
+.is-valid{
+	border-color: #4488bb !important;
+}
+
+.not-valid {
+	border-color: #bb4444 !important;
+}
+
+.not-valid + .message {
+	display: block;
 }
 
 .country-form-select {
@@ -198,48 +245,97 @@ section .card-1 {
 	background-image: url('../images/card_1.png');
 	background-position: center center;
 	margin: 75px 7px 24px 0;
+	overflow: hidden;
+	position: relative;
 }
+
 section .card-2 {
 	background-image: url('../images/card_2.png');
 	background-position: center 42%;
 	margin: 75px 8px 24px 8px;
+	overflow: hidden;
+	position: relative;
 }
 section .card-3 {
 	background-image: url('../images/card_3.png');
 	background-position: center 65%;
 	margin: 75px 0 24px 7px;
+	overflow: hidden;
+	position: relative;
 }
 section .card-4 {
 	background-image: url('../images/card_4.png');
 	background-position: center 29%;
 	margin: 0 7px 0 0;
+	overflow: hidden;
+	position: relative;
 }
 section .card-5 {
 	background-image: url('../images/card_5.png');
 	background-position: center 33%;
 	margin: 0 0 0 8px;
+	overflow: hidden;
+	position: relative;
 }
 
-.card-text {
-	background-color: #4488bb;
-	background-color: rgba(68, 136, 187, 0.7);
-	padding: 10px 20px 0 20px;
+.card-1:hover .card,
+.card-2:hover .card,
+.card-3:hover .card,
+.card-4:hover .card,
+.card-5:hover .card {
+	transform: translateY(0);
+}
+
+.card {
 	min-height: 150px;
+	background-color: rgba(68, 136, 187, 0.7);
+	padding: 0 20px 0 20px;
 	color: #fff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: translateY(calc(70px + 1em));
+	transition: transform 0.3s;
 }
 
-.card-text p:nth-child(1) {
+.col-md-4 .card, .col-md-6 .card {
+	color: #fff;
+	transform: translateY(calc(73px + 2em));
+}
+
+.card .content {
+	position: relative;
+	z-index: 1;
+}
+
+.card .title {
+	margin-top: 10px;
+	font-family: ArialBold;
+	font-size: 22px;
+}
+
+.card .text {
+	height: 70px;
+	margin: 0;
+	font-size: 13px;
+}
+
+.card-header .header {
 	font-family: ArialBold;
 	font-size: 22px;
 	margin-bottom: 7px;
 }
 
-.card-text p:nth-child(2) {
+.card-header .header p {
+	margin: 0;
+}
+
+.card-text {
 	font-size: 13px;
 	font-family: ArialRegular;
 }
 
-.card-container, .header, .img {
+.card-header, .card-header .header, .img {
 	padding: 0;
 }
 
@@ -247,3 +343,80 @@ section .card-5 {
 	float: right;
 	margin-top: 10px;
 }
+
+.promo-block {
+	background-color: #eeeeee;
+	position: relative;
+	margin-top: 75px;
+}
+
+.promo-block-image {
+	position: relative;
+	top: -20px;
+}
+
+.content-text {
+	margin-bottom: 70px;
+}
+
+.promo-block-text {
+	font-family: ArialBold;
+	color: #4488bb;
+}
+
+.promo-block-text .header {
+	font-size: 44px;
+	margin: 65px 0 35px 115px;
+}
+
+.promo-text {
+	font-family: ArialBold;
+	font-size: 17px;
+	margin-left: 55px;
+	padding: 0;
+}
+
+.marker {
+	vertical-align: middle;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	background-color: #4488bb;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: #fff;
+	margin: 13px 0;
+}
+
+.promo-text .text-1,
+.promo-text .text-2,
+.promo-text .text-3,
+.promo-text .text-4,
+.promo-text .text-5,
+.promo-text .text-6 {
+	padding: 13px 0;
+}
+
+.promo-text .text-1 span,
+.promo-text .text-2 span,
+.promo-text .text-3 span,
+.promo-text .text-4 span,
+.promo-text .text-5 span {
+	border-bottom: 1px dashed #aaaaaa;
+	padding: 13px 0;
+}
+
+.disclamers {
+	color: #4488bb;
+	border-left: 5px solid #4488bb;
+	font-family: ArialRegular;
+	font-size: 17px;
+	margin: 20px 0;
+}
+
+.disclamers-text {
+	padding: 20px 0 20px 25px;
+}
+
+

@@ -13,9 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -34,40 +32,50 @@
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 						</div>
-						<div class="request-form col-md-6">
-							<div class="text-form">Request form</div>
-							<form class="form">
-								<div class="email-form btn-group">
-									<label class="text-label">Enter your E-Mail</label>
-									<input type="text" class="text-input-email">
-									<span class="btn-form-email glyphicon glyphicon-remove"></span>
+						<form class="request-form col-md-6">
+							<div class="uk-grid uk-grid-collapse">
+								<div class="text-form">Request form</div>
+								<div class="form title-form">
+									<div class="content-form content-form-email">
+										<label>Enter your E-Mail</label>
+										<div class="input-holder">
+											<input type="email" name="mail" class="validate text-input-email" placeholder="Enter your E-Mail" autocomplete="off" required />
+
+											<span class="message">Enter correct E-Mail</span>
+											<span class="btn-form-email glyphicon glyphicon-remove"></span>
+										</div>
+									</div>
 								</div>
-							</form>
-							<form class="form">
-								<div class="name-form btn-group">
-									<label class="text-label">Enter your name</label>
-									<input type="text" class="text-input-name">
-									<span class="btn-form-name glyphicon glyphicon-remove"></span>
+								<div class="form title-form">
+									<div class="content-form content-form-name">
+										<label>Enter your name</label>
+										<div class="input-holder">
+											<input type="text" name="name" class="validate text-input-name" placeholder="Enter your name" autocomplete="off" required />
+
+											<span class="message">Enter correct name</span>
+											<span class="btn-form-name glyphicon glyphicon-remove"></span>
+										</div>
+									</div>
 								</div>
-							</form>
-							<div class="country-form">
-								<select class="country-form-select form-control">
-									<option>Select your country</option>
-									<option>Russia</option>
-									<option>USA</option>
-									<option>Germany</option>
-								</select>
+								<div class="country-form">
+									<select class="country-form-select form-control">
+										<option>Select your country</option>
+										<option>Russia</option>
+										<option>USA</option>
+										<option>Germany</option>
+									</select>
+								</div>
+								<div class="form-agree checkbox">
+									<label>
+										<input type="checkbox"> <span>I agree with Terms & Conditions</span>
+									</label>
+								</div>
+								<div class="button-form">
+									<button class="submit">Submit</button>
+									<a href="#">Hyperlink</a>
+								</div>
 							</div>
-							<div class="form-agree checkbox">
-								<label>
-									<input type="checkbox"> <span>I agree with Terms & Conditions</span>
-								</label>
-							</div>
-							<div class="button-form">
-								<button>Submit</button>
-								<a href="#">Hyperlink</a>
-							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -79,76 +87,179 @@
 			<div class="col-md-12">
 				<div class="row">
 					<div class="col-md-4 card-1">
-						<div class="card-text">
-							<div class="col-md-12 card-container">
-								<div class="col-md-11 header">
-									<p>Post header 1</p>
+						<div class="card">
+							<div class="content">
+								<div class="col-md-12 card-header">
+									<div class="col-md-11 header">
+										<h1 class="title">Post header 1</h1>
+									</div>
+									<div class="col-md-1 img">
+										<img src="./images/card-window.png" alt="">
+									</div>
 								</div>
-								<div class="col-md-1  img">
-									<img src="./images/card-window.png" alt="">
-								</div>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
 					</div>
 					<div class="col-md-4 card-2">
-						<div class="card-text">
-							<div class="col-md-12 card-container">
-								<div class="col-md-11 header">
-									<p>Post header 2</p>
+						<div class="card">
+							<div class="content">
+								<div class="col-md-12 card-header">
+									<div class="col-md-11 header">
+										<h1 class="title">Post header 2</h1>
+									</div>
+									<div class="col-md-1 img">
+										<img src="./images/card-window.png" alt="">
+									</div>
 								</div>
-								<div class="col-md-1  img">
-									<img src="./images/card-window.png" alt="">
-								</div>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
 					</div>
 					<div class="col-md-4 card-3">
-						<div class="card-text">
-							<div class="col-md-12 card-container">
-								<div class="col-md-11 header">
-									<p>Post header 3</p>
+						<div class="card">
+							<div class="content">
+								<div class="col-md-12 card-header">
+									<div class="col-md-11 header">
+										<h1 class="title">Post header 3</h1>
+									</div>
+									<div class="col-md-1 img">
+										<img src="./images/card-window.png" alt="">
+									</div>
 								</div>
-								<div class="col-md-1  img">
-									<img src="./images/card-window.png" alt="">
-								</div>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 card-4">
-						<div class="card-text">
-							<div class="col-md-12 card-container">
-								<div class="col-md-11 header">
-									<p>Post header 4</p>
+						<div class="card">
+							<div class="content">
+								<div class="col-md-12 card-header">
+									<div class="col-md-11 header">
+										<h1 class="title">Post header 4</h1>
+									</div>
+									<div class="col-md-1 img">
+										<img src="./images/card-window.png" alt="">
+									</div>
 								</div>
-								<div class="col-md-1  img">
-									<img src="./images/card-window.png" alt="">
-								</div>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
 					</div>
 					<div class="col-md-6 card-5">
-						<div class="card-text">
-							<div class="col-md-12 card-container">
-								<div class="col-md-11 header">
-									<p>Post header 5</p>
+						<div class="card">
+							<div class="content">
+								<div class="col-md-12 card-header">
+									<div class="col-md-11 header">
+										<h1 class="title">Post header 5</h1>
+									</div>
+									<div class="col-md-1 img">
+										<img src="./images/card-window.png" alt="">
+									</div>
 								</div>
-								<div class="col-md-1 img">
-									<img src="./images/card-window.png" alt="">
-								</div>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section>
+		<div class="promo-block">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="promo-block-image ">
+								<img src="images/pc.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-9 content-text">
+							<div class="promo-block-text col-md-offset-3">
+								<div class="header">
+									<p>
+										Title text
+									</p>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">1</div>
+									</div>
+									<div class="col-md-11 text-1">
+										<span>Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit</span>
+									</div>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">2</div>
+									</div>
+									<div class="col-md-11 text-2">
+										<span>Ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
+									</div>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">3</div>
+									</div>
+									<div class="col-md-11 text-3">
+										<span>Ut enim ad minim veniam, quis nostrud exercitation</span>
+									</div>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">4</div>
+									</div>
+									<div class="col-md-11 text-4">
+										<span>Et dolore magna aliqua</span>
+									</div>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">5</div>
+									</div>
+									<div class="col-md-11 text-5">
+										<span>Sed do eiusmod tempor<sup>2</sup> incididunt ut labore</span>
+									</div>
+								</div>
+								<div class="promo-text col-md-12">
+									<div class="col-md-1">
+										<div class="marker">6</div>
+									</div>
+									<div class="col-md-11 text-6">
+										<span>Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="col-md-12">
+				<div class="row disclamers">
+					<div class="disclamers-text">
+						<div class="text">
+							<span><sup>1</sup> Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</span>
+						</div>
+						<div class="text">
+							<span><sup>2</sup> Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+						</div>
+						<div class="text">
+							<span><sup>3</sup> Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<!--[if lt IE 9]>
@@ -158,15 +269,11 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="libs/countdown/jquery.plugin.js"></script>
 	<script src="libs/countdown/jquery.countdown.min.js"></script>
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
-	<script src="libs/landing-nav/navigation.js"></script>
 	<script src="js/index.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
