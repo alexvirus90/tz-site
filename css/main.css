@@ -1,3 +1,7 @@
+input::-ms-clear {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -11,6 +15,78 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+a:active, a:hover, a:visited, a:focus {
+	text-decoration: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 3px;
+	width: 590px;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+	margin: 0 0 20px 0;
+	color: #333333;
+	font-family: ArialBold;
+	font-size: 22px;
+}
+
+.popup .closes {
+	position: absolute;
+	top: 10px;
+	right: 23px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: .6;
+}
+
+.popup .closes:hover {
+	color: #666666;
+}
+
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+	font-family: ArialRegular;
+	font-size: 16px;
+	margin-bottom: 25px;
+	color: #333333;
+}
+
+.popup .button-form {
+	text-align: right;
+}
+
+.popup .button-form a {
+	margin: 0;
+	padding-right: 35px;
 }
 
 .top_header {
@@ -196,8 +272,8 @@ a {
 	color: #aaaaaa;
 }
 
-.button-form button{
-	width: 120px;
+.button-form button {
+	width: 125px;
 	background: #4488bb;
 	background-image: -webkit-linear-gradient(top, #4488bb, #2e5d80);
 	background-image: -moz-linear-gradient(top, #4488bb, #2e5d80);
@@ -247,7 +323,6 @@ section .card-1 {
 	overflow: hidden;
 	position: relative;
 }
-
 section .card-2 {
 	background-image: url('../images/card_2.png');
 	background-position: center 42%;
@@ -282,6 +357,10 @@ section .card-5 {
 .card-3:hover .card,
 .card-4:hover .card,
 .card-5:hover .card {
+	-ms-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-o-transform: translateY(0);
 	transform: translateY(0);
 }
 
@@ -299,6 +378,9 @@ section .card-5 {
 
 .col-md-4 .card, .col-md-6 .card {
 	color: #fff;
+	-ms-transform: translateY(105px);
+	-webkit-transform: translateY(105px);
+	-moz-transform: translateY(calc(73px + 2em));
 	transform: translateY(calc(73px + 2em));
 }
 
@@ -345,7 +427,6 @@ section .card-5 {
 
 .promo-block {
 	background-color: #eeeeee;
-	position: relative;
 	margin-top: 75px;
 }
 
@@ -397,11 +478,11 @@ section .card-5 {
 	padding: 13px 0;
 }
 
-.promo-text .text-1 span,
-.promo-text .text-2 span,
-.promo-text .text-3 span,
-.promo-text .text-4 span,
-.promo-text .text-5 span {
+.promo-text .text-1 a,
+.promo-text .text-2 a,
+.promo-text .text-3 a,
+.promo-text .text-4 a,
+.promo-text .text-5 a {
 	border-bottom: 1px dashed #aaaaaa;
 	padding: 13px 0;
 }
