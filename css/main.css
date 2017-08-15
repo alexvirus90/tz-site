@@ -27,7 +27,7 @@ a {
 	padding: 0;
 }
 
-.banner-text p:nth-child(1) {
+.banner-text .header-title {
 	color: #fff;
 	font-family: ArialBold;
 	font-size: 48px;
@@ -37,10 +37,10 @@ a {
 	width: 337px;
 }
 
-.banner-text p:nth-child(2) {
+.banner-text .header-text {
 	color: #fff;
-	font-size: 18px;
-	width: 503px;
+	font-size: 17px;
+	width: 477px;
 }
 
 .request-form {
@@ -224,7 +224,6 @@ section .card-2,
 section .card-3,
 section .card-4,
 section .card-5 {
-
 	background-repeat: no-repeat;
 	height: 150px;
 	padding: 0;

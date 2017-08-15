@@ -3,11 +3,172 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+	section .card-1,
+	section .card-2,
+	section .card-3 {
+		width: 300px;
+		height: 170px;
+	}
+
+	section .card-4,
+	section .card-5 {
+		width: 457px;
+	}
+
+	.col-md-4 .card {
+		min-height: 170px;
+	}
+
+	.col-md-4 .card {
+		transform: translateY(calc(95px + 2em));
+	}
+
+	.content-text {
+		margin-bottom: 50px;
+	}
+
+	.promo-text {
+		padding-left: 100px;
+		margin: 0;
+	}
+
+	.promo-text .col-md-1 {
+		padding: 11px 15px;
+	}
+
+	.promo-text .text-4 {
+		padding: 15px 13px;
+	}
+
+	.promo-text .text-1,
+	.promo-text .text-2,
+	.promo-text .text-3,
+	.promo-text .text-5,
+	.promo-text .text-6 {
+		padding: 0 13px;
+	}
+
+	.promo-text .text-1 span,
+	.promo-text .text-2 span,
+	.promo-text .text-3 span,
+	.promo-text .text-4 span,
+	.promo-text .text-5 span {
+		border-bottom: 0;
+	}
+
+	.border-text {
+		border-bottom: 1px dashed #aaaaaa;
+		padding: 13px 0;
+	}
+
+	.promo-block-text .header {
+		margin: 50px 0 15px 115px;
+	}
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
 
+	.request-form {
+		margin: 30px auto;
+		float: none;
+	}
+
+	.banner-text .header-title {
+		margin: 13px auto 26px;
+	}
+
+	.banner-text .header-text {
+		width: 303px;
+		margin: 0 auto;
+	}
+
+	.section-body .container {
+		width: 100%;
+		margin: 0;
+	}
+
+	.promo-block .col-md-3 {
+		display: none;
+	}
+
+	.content-text {
+		width: 100%;
+	}
+
+	.promo-block-text {
+		margin: 0;
+	}
+
+	.promo-text {
+		padding: 0;
+	}
+
+	.promo-text .col-md-1 {
+		padding: 0 15px;
+	}
+
+	.promo-text .text-1 span,
+	.promo-text .text-2 span,
+	.promo-text .text-3 span,
+	.promo-text .text-4 span,
+	.promo-text .text-5 span {
+		border-bottom: 1px dashed #aaaaaa;
+	}
+
+	.border-text {
+		border-bottom: 0;
+		padding: 13px 0;
+	}
+
+	.col-md-4 .card, .col-md-6 .card {
+	min-height: 170px;
+	}
+
+	.col-md-4 .card, .col-md-6 .card {
+	transform: translateY(calc(95px + 2em));
+	}
+
+	section .card-1,
+	section .card-2,
+	section .card-3,
+	section .card-4,
+	section .card-5 {
+	width: 300px;
+	height: 170px;
+	}
+
+	section .card-1,
+	section .card-2,
+	section .card-3 {
+	margin: 10px auto;
+	}
+
+	section .card-4 {
+	margin: 0 auto 10px auto;
+	}
+
+	section .card-5 {
+	margin: 10px auto 0 auto;
+	}
+
+	.promo-block {
+	margin-top: -85px;
+	z-index: -1;
+	}
+
+	.promo-block-text .header {
+	margin: 15px 0;
+	text-align: center;
+	}
+
+	.promo-content-text {
+	margin: 0 60px;
+	}
+
+	.promo-text .text-4 {
+	padding: 0 13px;
+	}
 }
 
 		/* Small Devices, Tablets */
@@ -16,15 +177,71 @@
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 640px) {
 
+	.promo-text .text-1 span,
+	.promo-text .text-2 span,
+	.promo-text .text-3 span,
+	.promo-text .text-4 span,
+	.promo-text .text-5 span {
+		border-bottom: 0;
+	}
+
+	.promo-block-text .header {
+		display: none;
+	}
+
+	.border-text {
+		border-bottom: 1px dashed #aaaaaa;
+		padding: 13px 0;
+	}
+
+	.promo-text .marker-1,
+	.promo-text .marker-2,
+	.promo-text .marker-3,
+	.promo-text .marker-6 {
+		padding: 10px 15px;
+	}
+
+	.promo-text .marker-4,
+	.promo-text .marker-5 {
+		padding: 0 15px;
+	}
+
+	.promo-content-text {
+		margin: 0 auto;
+	}
+
+	.promo-text {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 440px) {
 
+	.promo-text {
+		width: 300px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.promo-text .marker-1 {
+		padding: 23px 0;
+	}
+
+	.promo-text .marker-2,
+	.promo-text .marker-3,
+	.promo-text .marker-5,
+	.promo-text .marker-6 {
+		padding: 10px 0;
+	}
+
+	.promo-text .marker-4 {
+		padding: 0;
+	}
 }
-
 
 /*==========  Mobile First Method  ==========*/
 
@@ -44,11 +261,11 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 991px) {
 
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 1000px) {
 
 }

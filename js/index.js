@@ -1,4 +1,3 @@
-'use strict';
 $(document).ready(function() {
 
   $('.btn-form-email').click(function () {
